@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'AlibabaRegular';
+  src: url('../fonts/Alibaba-PuHuiTi-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AlibabaMedium';
+  src: url('../fonts/Alibaba-PuHuiTi-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AlibabaLight';
+  src: url('../fonts/Alibaba-PuHuiTi-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AlibabaHeavy';
+  src: url('../fonts/Alibaba-PuHuiTi-Heavy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AlibabaBold';
+  src: url('../fonts/Alibaba-PuHuiTi-B.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.font-aliamafangyuan-ti {
+  font-family: AlimamafangyuanTi;
+}
+/* 自定义滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;  /* 滚动条宽度 */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;  /* 滚动条轨道背景色 */
+  border-radius: 4px;  /* 轨道圆角 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;  /* 滚动条滑块颜色 */
+  border-radius: 4px;  /* 滑块圆角 */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;  /* 鼠标悬停时滑块颜色 */
+}
+
+/* 为Firefox浏览器定制滚动条 */
+* {
+  scrollbar-width: thin;  /* 设置滚动条宽度为细 */
+  scrollbar-color: #c1c1c1 #f1f1f1;  /* 设置滑块颜色和轨道颜色 */
+}

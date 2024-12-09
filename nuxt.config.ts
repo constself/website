@@ -9,8 +9,14 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
     '@nuxt/eslint',
+    '@nuxtjs/tailwindcss',
+    'shadcn-nuxt',
+    'nuxt-swiper',
   ],
-
+  plugins: [
+    './plugins/animate.ts',
+    './plugins/number-scroll.ts',
+  ],
   devtools: {
     enabled: true,
   },
@@ -35,6 +41,10 @@ export default defineNuxtConfig({
 
   css: [
     '@unocss/reset/tailwind.css',
+    'normalize.css/normalize.css',
+    'animate.css/animate.min.css',
+    './app/assets/css/mian.css',
+    'swiper/css',
   ],
 
   colorMode: {
