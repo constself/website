@@ -20,6 +20,8 @@
     "lucide-vue-next": "^0.468.0",
     "normalize.css": "^8.0.1",
     "radix-vue": "^1.9.11",
+    "sass": "^1.82.0",
+    "sass-loader": "^16.0.4",
     "swiper": "^11.1.15",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7"
