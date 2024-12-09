@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { HomeView } from './components/home'
+
 definePageMeta({
   layout: 'home',
 })
@@ -8,16 +10,15 @@ const online = useOnline()
 
 <template>
   <div>
-    <Logos mb-6 />
     <ClientOnly>
       <Suspense>
-        <PageView v-if="online" />
+        <HomeView v-if="online" />
         <div v-else text-gray:80>
-          You're offline
+          您在离线状态
         </div>
         <template #fallback>
           <div italic op50>
-            <span animate-pulse>Loading...</span>
+            <span animate-pulse>加载中...</span>
           </div>
         </template>
       </Suspense>
@@ -27,6 +28,5 @@ const online = useOnline()
         </div>
       </template>
     </ClientOnly>
-    <InputEntry />
   </div>
 </template>
